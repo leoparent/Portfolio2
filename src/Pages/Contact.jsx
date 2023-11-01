@@ -3,8 +3,11 @@ import { m, LazyMotion, domAnimation } from "framer-motion";
 import SectionTitle from "../Components/SectionTitle";
 import ContactForm from "../Components/ContactForm";
 import SocialLinks from "../Components/SocialLinks";
+import { useTranslation, } from "react-i18next";
 
 const Contact = () => {
+  const[t,i18n] = useTranslation("global")
+  const currentLanguage = i18n.language;
   return (
     <div
       id="contact"
@@ -12,7 +15,7 @@ const Contact = () => {
     >
       <div className="w-full min-h-[800px] flex flex-col xl:w-[70%]">
         <div className="w-full">
-          <SectionTitle title="CONTACT" subtitle="Get in touch" />
+          <SectionTitle title={t("contacts.title")} subtitle={t("contacts.Introduction")} />
         </div>
         <div className="w-full flex justify-center items-center">
           <LazyMotion features={domAnimation} strict>

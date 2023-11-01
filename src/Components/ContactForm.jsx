@@ -1,11 +1,15 @@
 import { useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
+import { useTranslation, } from "react-i18next";
 
 const ContactForm = () => {
   const [isSent, setIsSent] = useState(false);
   const form = useRef();
-  
+
+  const[t,i18n] = useTranslation("global")
+  const currentLanguage = i18n.language;
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -19,7 +23,7 @@ const ContactForm = () => {
         (result) => {
           document.getElementById("contact_form").reset();
           setIsSent(true);
-          alert('Thank you I will get back to you as soon as possible ! (:');
+          alert(t("contacts.alert"));
         },
         (error) => {
           console.error(error);
@@ -43,7 +47,7 @@ const ContactForm = () => {
           style={{ fontFamily: "Morganite Bold, sans-serif" }}
           className="message text-7xl bg-primary-600 p-2 rounded-xl text-grayscale-200 text-center rounded-br-[0%] relative shadow-2xl"
         >
-          <Typewriter words={["Tell me about your project !"]} loop={true} />
+          <Typewriter words={[t("contacts.SubTitle")]} loop={true} />
           &nbsp;
         </h2>
       </div>
@@ -58,10 +62,10 @@ const ContactForm = () => {
           className="w-[80%] h-full flex flex-col gap-4 pt-4 text-grayscale-200"
         >
           <div className="w-full flex flex-col">
-            <label htmlFor="firstname">First Name</label>
+            <label htmlFor="firstname">{t("contacts.Fname")}</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your First Name"
+              placeholder={t("contacts.FnameDescription")}
               id="firstname"
               type="text"
               name="from_name"
@@ -69,10 +73,10 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-            <label htmlFor="lastname">Last Name</label>
+            <label htmlFor="lastname">{t("contacts.LName")}</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your Last Name"
+              placeholder={t("contacts.LnameDescription")}
               id="lastname"
               type="text"
               name="from_last"
@@ -80,10 +84,10 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-            <label htmlFor="email">E-mail</label>
+            <label htmlFor="email">{t("contacts.Email")}</label>
             <input
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your E-mail"
+              placeholder={t("contacts.EmailDescription")}
               id="email"
               type="email"
               name="from_email"
@@ -91,10 +95,10 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full flex flex-col">
-            <label>Message</label>
+            <label>{t("contacts.message")}</label>
             <textarea
               className="p-[0.5em] rounded-xl text-grayscale-950"
-              placeholder="Enter your message..."
+              placeholder={t("contacts.messageDescription")}
               name="message"
               required
             ></textarea>

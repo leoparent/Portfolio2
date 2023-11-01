@@ -1,22 +1,17 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: Skills.jsx
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 03/06/2023
-*/
 
 import MarqueeCards from "../Components/MarqueeCards";
 import SectionTitle from "../Components/SectionTitle";
 import SkillsCards from "../Components/SkillsCards";
+import { useTranslation, } from "react-i18next";
 
 const Skills = () => {
+  const[t,i18n] = useTranslation("global")
+  const currentLanguage = i18n.language;
   return (
     <div id="skills" className="w-full overflow-hidden-web flex justify-center">
       <div className="w-full min-h-[800px] flex flex-col xl:w-[70%]">
         <div className="w-full">
-          <SectionTitle title="SKILLS" subtitle="WHAT I DO" />
+          <SectionTitle title={t("skills.title")} subtitle={t("skills.Introduction")} />
         </div>
         <div className="xl:border-l-2 xl:border-r-2 xl:border-primary-400 h-full">
           <div className="relative">

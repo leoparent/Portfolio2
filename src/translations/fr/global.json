@@ -1,0 +1,40 @@
+{
+    "header":{
+        "message": "Welcome"
+    },
+    "nav":{
+        "about":"A propos ",
+        "projects":"Projets ",
+        "skills":"Compétences ",
+        "contact":"Me contacter "
+    },
+    "hero":{
+        "title": "Ingénieur Cloud"
+    },
+    "about":{
+        "title": "A PROPOS",
+        "Introduction": "INTRODUCTION"
+    },
+    "projects":{
+        "title": "PROJETS",
+        "Introduction": "CE QUE J'AI FAIT JUSQU'À PRÉSENT"
+    },
+    "skills":{
+        "title": "COMPÉTENCES",
+        "Introduction": "CE QUE JE FAIS"
+    },
+"contacts":{
+    "title": "ME CONTACTER",
+    "Introduction": "PRENDRE CONTACT",
+    "alert":"Merci, je vous répondrai dans les plus brefs délais !",
+    "SubTitle":"Parlez-moi de votre projet !",
+    "Fname":"Prénom",
+    "FnameDescription":"Entrez votre prénom",
+    "LName":"Last Name",
+    "LnameDescription":"Entrez votre nom de famille",
+    "Email":"E-mail",
+    "EmailDescription":"Entrez votre E-mail",
+    "message":"Message",
+    "messageDescription":"Entrez votre message..."
+}
+}

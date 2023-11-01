@@ -1,16 +1,10 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: HeroText.jsx
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 03/06/2023
-*/
 
 import { m, LazyMotion, domAnimation } from "framer-motion";
+import { useTranslation, } from "react-i18next";
 
 const HeroText = () => {
-  const name = "Léo PARENT ?";
+  const name = "Léo PARENT ";
+  const[t,i18n] = useTranslation("global")
 
   return (
     <div
@@ -30,7 +24,7 @@ const HeroText = () => {
             whileInView={{ x: 0 }}
             transition={{ duration: 0.6, type: "spring" }}
           >
-            Who's{" "}
+           {t("hero.title")}  {" "}
           </m.span>
           <m.div
             initial={{ x: 100 }}

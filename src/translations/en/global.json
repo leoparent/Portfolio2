@@ -1,0 +1,40 @@
+{
+"header":{
+    "message": "Welcome"
+},
+"nav":{
+    "about":"About ",
+    "projects":"Projects ",
+    "skills":"Skills ",
+    "contact":"Contact "
+},
+"hero":{
+    "title": "Cloud Engineer"
+},
+"about":{
+    "title": "ABOUT ME",
+    "Introduction": "INTRODUCTION"
+},
+"projects":{
+    "title": "PROJECTS",
+    "Introduction": "WHAT I HAVE DONE SO FAR"
+},
+"skills":{
+    "title": "SKILLS",
+    "Introduction": "WHAT I DO"
+},
+"contacts":{
+    "title": "CONTACT",
+    "Introduction": "GET IN TOUCH",
+    "alert":"'Thank you I will get back to you as soon as possible !",
+    "SubTitle":"Tell me about your project !",
+    "Fname":"First Name",
+    "FnameDescription":"Enter your First Name",
+    "LName":"Last Name",
+    "LnameDescription":"Enter your Last Name",
+    "Email":"E-mail",
+    "EmailDescription":"Enter your E-mail",
+    "message":"Message",
+    "messageDescription":"Enter your message..."
+}
+}

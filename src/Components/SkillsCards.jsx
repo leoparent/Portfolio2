@@ -1,16 +1,11 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: SkillCards.jsx
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 03/06/2023
-*/
 
 import { m, LazyMotion, domAnimation } from "framer-motion";
-import { skills } from "../Constants/constants";
+import { skills,skills_description_en,skills_description_fr } from "../Constants/constants";
+import { useTranslation, } from "react-i18next";
 
 const SkillsCards = () => {
+  const[t,i18n] = useTranslation("global")
+  const currentLanguage = i18n.language;
   return (
     <div className="flex">
     <LazyMotion features={domAnimation} strict>
@@ -53,7 +48,7 @@ const SkillsCards = () => {
                 fontWeight: "400",
               }}
             >
-              {skill.description}
+               {currentLanguage === "en" ? skills_description_en.text[index] : skills_description_fr.text[index]}
             </span>
           </div>
         </m.div>

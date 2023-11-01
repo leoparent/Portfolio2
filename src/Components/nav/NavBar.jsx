@@ -1,22 +1,20 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: NavBar.jsx
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 02/06/2023
-*/
-
 import React, {useState } from "react";
 import { Link } from "react-router-dom";
 import {styles} from '../../styles.js';
 import { navLinks } from "../../Constants/constants";
 import { logocloud, menu, close } from "../../assets";
+import { useTranslation, } from "react-i18next";
+import { logoFrance,logoGB } from "../../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [nextLang, setNextLang] = useState("fr"); 
 
+  const[t,i18n] = useTranslation("global")
+  const handleChangeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
   return (
     <nav
       className={`
@@ -33,8 +31,21 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logocloud} alt={logocloud} className="w-18 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <img src={nextLang === "en" ? logoGB : logoFrance}
+          alt={logoFrance} 
+          className="w-18 h-16 object-contain" 
+          onClick={() => {
+            if (nextLang === "en") {
+              handleChangeLanguage("en");
+              setNextLang("fr");
+            } else {
+              handleChangeLanguage("fr");
+              setNextLang("en");
+            }
+          }}
+          />
+          
+          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10"  style={{ color: '#FFFFFF' }}>
@@ -47,7 +58,7 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer `}
                 onClick={() => setActive(link.title)}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <a href={`#nav.${link.id}`}>{t(`nav.${link.id}`)}</a>
               </li>
             );
           })}

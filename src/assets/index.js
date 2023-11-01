@@ -1,15 +1,9 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: index.js
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 03/06/2023
-*/
 
 // Logo
 import bl33hIcon from './logo/bl33hIcon.png';
 import logocloud from './logo/logocloud.png';
+import logoFrance from './logo/logoFrance.png';
+import logoGB from './logo/logoGB.png';
 
 
 // Technologies
@@ -38,6 +32,8 @@ import DevopsIcon from './tech/devops.png';
 import CreedlyIcon from './tech/creedly.png';
 import WebsiteIcon from './tech/website.png';
 import Databases from './tech/databases.png';
+import Compas from './tech/Compas.png';
+
 
 
 // Projects
@@ -84,5 +80,8 @@ export {
   imogate,
   logocloud,
   Allianz,
-  Databases
+  Databases,
+  logoFrance,
+  logoGB,
+  Compas
 };
