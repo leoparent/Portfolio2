@@ -37,7 +37,7 @@ import AzureIcon from './tech/azurelogo.png';
 import DevopsIcon from './tech/devops.png';
 import CreedlyIcon from './tech/creedly.png';
 import WebsiteIcon from './tech/website.png';
-import Databases from './tech/Databases.png';
+import Databases from './tech/databases.png';
 
 
 // Projects
