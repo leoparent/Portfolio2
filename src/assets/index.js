@@ -2,7 +2,7 @@
 // Logo
 import bl33hIcon from './logo/bl33hIcon.png';
 import logocloud from './logo/logocloud.png';
-import logoFrance from './logo/logoFrance.png';
+import logoFrance from './logo/logofrance.png';
 import logoGB from './logo/logoGB.png';
 
 
