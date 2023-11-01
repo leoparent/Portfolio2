@@ -32,7 +32,7 @@ import DevopsIcon from './tech/devops.png';
 import CreedlyIcon from './tech/creedly.png';
 import WebsiteIcon from './tech/website.png';
 import Databases from './tech/databases.png';
-import Compas from './tech/Compas.png';
+import Compas from './tech/compas.png';
 
 
 
