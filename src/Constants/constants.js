@@ -191,7 +191,7 @@ const project_description_fr = {
   text: [
     "J'étais le responsable des systèmes d'information de la première équipe française à participer à la formula student en catégorie autonome. Notre équipe a participé à la FS UK 2023 à Silverstone.",
 
-    "Imogate est une start-up qui fournit des services de gestion de prêts, de biens immobiliers et d'investissements à des fonds d'investissements internationales. Pendant mon stage, j'ai conçu l'architecture des processus de facturation et du support client en utilisant Python, React, Azure et SQL.",
+    "Imogate est une start-up qui fournit des services de gestion de prêts, de biens immobiliers et d'investissements à des fonds d'investissements internationaux. Pendant mon stage, j'ai conçu l'architecture des processus de facturation et du support client en utilisant Python, React, Azure et SQL.",
 
     "GrandCoeur est une start-up qui suit les patients à la sortie des urgences. J'étais chef de produit pour l'application GrandCoeur, qui permet aux patients de communiquer avec les médecins.",
 
