@@ -88,7 +88,7 @@ const Navbar = () => {
                       setToggle(!toggle);
                     }}
                   >
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <a href={`#${link.id}`}>{t(`nav.${link.id}`)}</a>
                   </li>
                 );
               })}
