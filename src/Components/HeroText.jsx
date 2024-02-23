@@ -3,7 +3,7 @@ import { m, LazyMotion, domAnimation } from "framer-motion";
 import { useTranslation, } from "react-i18next";
 
 const HeroText = () => {
-  const name = "Léo PARENT ";
+  const name = "Leo PARENT ";
   const[t,i18n] = useTranslation("global")
 
   return (

@@ -44,6 +44,7 @@ import {
   imogate,
   logocloud,
   Allianz,
+  Devoteam,
   Databases,
   Compas
 } from '../assets';
@@ -77,6 +78,7 @@ const media = {
   WebsiteIcon,
   imogate,
   Allianz,
+  Devoteam,
   Databases,
   Compas
 };
@@ -154,6 +156,11 @@ export const navLinks = [
 
 const projects = [
   {
+    name: 'Devoteam M Cloud',
+    image: Devoteam,
+    source_code_link: 'https://mcloud.devoteam.com/fr/',
+  },
+  {
     name: "Arece",
     image: memoryGame,
     source_code_link: 'https://arece.eu/',
@@ -177,6 +184,8 @@ const projects = [
 
 const project_description_en = {
   text: [
+    "Devoteam M cloud is a services company specializing in Microsoft tools. At Microsoft M cloud I work with Azure domain experts on Devops and Cloud architecture missions. ",
+
     "I was the information systems manager for the first French team in the autonomous category to take part in the student formula. Our team took part in the FS UK 2023 at Silverstone.",
 
     "Imogate is a start-up providing loan, real estate and investment management services to international financial institutions. During my internship, I designed the architecture of the billing and support processes using Python, React, Azure and SQL.",
@@ -184,11 +193,14 @@ const project_description_en = {
     "GrandCoeur is a start-up that monitors patients as they leave the emergency room. I was the product manager for the GrandCoeur application, enabling patients to communicate with doctors.",
 
     "As an intern at Allianz, I created a platform enabling sales representatives to better interact with brokers. As well as designing a dictionary to process customer data between lawyers and brokers (SQL).",
+ 
   ],
 };
 
 const project_description_fr = {
   text: [
+    "Devoteam M cloud est une société de services spécialisée dans les outils Microsoft. Chez Microsoft M cloud je travaille avec des experts du domaine Azure sur des missions de Devops et d'architecture Cloud. ",
+
     "J'étais le responsable des systèmes d'information de la première équipe française à participer à la formula student en catégorie autonome. Notre équipe a participé à la FS UK 2023 à Silverstone.",
 
     "Imogate est une start-up qui fournit des services de gestion de prêts, de biens immobiliers et d'investissements à des fonds d'investissements internationaux. Pendant mon stage, j'ai conçu l'architecture des processus de facturation et du support client en utilisant Python, React, Azure et SQL.",
@@ -196,6 +208,8 @@ const project_description_fr = {
     "GrandCoeur est une start-up qui suit les patients à la sortie des urgences. J'étais chef de produit pour l'application GrandCoeur, qui permet aux patients de communiquer avec les médecins.",
 
     "En tant que stagiaire chez Allianz, j'ai créé une plateforme permettant aux commerciaux de mieux interagir avec les courtiers. J'ai également conçu un dictionnaire pour traiter les données des clients entre les avocats et les courtiers (SQL).",
+ 
+    "As an intern at Allianz, I created a platform enabling sales representatives to better interact with brokers. As well as designing a dictionary to process customer data between lawyers and brokers (SQL).",
   ],
 };
 
