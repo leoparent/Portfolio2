@@ -6,7 +6,10 @@ const SocialLinks = () => {
   return (
     <div className="w-full h-[100px] bg-grayscale-950 flex justify-center items-center gap-3 p-6">
       <a href="https://www.credly.com/users/leo-parent/badges" target="_blank">
-        {'\u2714'}
+        <FontAwesomeIcon
+          className="text-3xl text-grayscale-50 hover:text-primary-400 hover:scale-[1.1] transition-all duration-75"
+          icon={icons.faCertificate}
+        />
       </a>
       <a href="mailto:leo.parent94@gmail.com" target="_blank">
         <FontAwesomeIcon

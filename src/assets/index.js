@@ -33,6 +33,7 @@ import CreedlyIcon from './tech/creedly.png';
 import WebsiteIcon from './tech/website.png';
 import Databases from './tech/databases.png';
 import Compas from './tech/compas.png';
+import Microsoft from './tech/microsoft.png';
 
 
 
@@ -43,6 +44,7 @@ import memoryGame from './projects/memory.jpg';
 import imogate from './projects/imogate.png';
 import Allianz from './projects/allianz.png';
 import Devoteam from './projects/Devoteam.png';
+
 
 // Avatar
 import avatar from './avatar/avatar.png';
@@ -84,5 +86,6 @@ export {
   Databases,
   logoFrance,
   logoGB,
-  Compas
+  Compas,
+  Microsoft,
 };

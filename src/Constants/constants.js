@@ -7,6 +7,7 @@ import {
   faBagShopping,
   faDiceD6,
   faEnvelope,
+  faCertificate
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faReact,
@@ -46,7 +47,8 @@ import {
   Allianz,
   Devoteam,
   Databases,
-  Compas
+  Compas,
+  Microsoft
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -80,7 +82,9 @@ const media = {
   Allianz,
   Devoteam,
   Databases,
-  Compas
+  Compas,
+  Microsoft,
+  
 };
 
 const icons = {
@@ -94,7 +98,7 @@ const icons = {
   faLinkedin,
   faEnvelope,
   CreedlyIcon,
-  
+  faCertificate,
 };
 
 const introduction_en = {
@@ -241,7 +245,7 @@ const skills = [
   },
   {
     id: 'Azure',
-    title: 'Azure ',
+    title: 'Azure 🎖️',
     icon: AzureIcon,
     description:
       'I use the Azure cloud to design and deploy cloud infrastructures',

@@ -7,7 +7,6 @@ import App from "./App";
 import "./index.css";
 import "font-awesome/css/font-awesome.min.css";
 import "../../public/Fonts/Morganite/morganiteFont.css";
-
 import global_en from "../translations/en/global.json";
 import global_fr from "../translations/fr/global.json";
 import i18n from "i18next";
